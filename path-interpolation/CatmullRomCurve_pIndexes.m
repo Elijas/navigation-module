@@ -5,8 +5,7 @@
 % Outputs
 % - [horizontal vector] corresponding element indexes (of the output vector from CatmullRomCurve() function) of the feature points
 % Usage Example
-% p=[9 7 8 5 2 3]; density=5; close all;hold on;
-% plot(CatmullRomCurve(p, density)); plot( CatmullRomCurve_pIndexes(p, density), p, 'o');
+% p=[9 7 8 5 2 3]; density=5; close all;hold on; plot(CatmullRomCurve(p, density)); plot( CatmullRomCurve_pIndexes(p, density), p, 'o');
 
 function I = CatmullRomCurve_pIndexes(p, density)
 

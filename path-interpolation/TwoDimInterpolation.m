@@ -5,9 +5,7 @@
 % Outputs
 % - [matrix ((N-1)*density)x2] IP: x and y of the interpolated points
 % Usage Example
-% FP = [2.2 3.7;2 5;3.8 5.6;5 4;4.4 2;3.1 3;1 2];
-% IP = TwoDimInterpolation(FP, 5);
-% close all;hold on; plot(IP(:,1), IP(:,2), 'x'); plot(FP(:,1), FP(:,2), 'ro');
+% FP = [2.2 3.7;2 5;3.8 5.6;5 4;4.4 2;3.1 3;1 2]; IP = TwoDimInterpolation(FP, 5); close all;hold on; plot(IP(:,1), IP(:,2), 'x'); plot(FP(:,1), FP(:,2), 'ro');
 
 function IP = TwoDimInterpolation(FP, density)
 
