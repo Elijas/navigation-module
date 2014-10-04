@@ -5,7 +5,8 @@
 % Outputs
 % - [horizontal vector] y values of the uniformly distributed interpolated points
 % Usage Example
-% t=linspace(0,1,51)(2:end); p=[9 7 8 5 2 3]; close all;figure;hold on; plot(CatmullRomCurve(t, p), '.'); plot( size(t,2)*(0:size(p,2)-1), p, 'o');
+% t=linspace(0,1,51)(2:end); p=[9 7 8 5 2 3]; close all;
+% plot(CatmullRomCurve(t, p), '.');
 
 function q = CatmullRomCurve(t, p)
 
@@ -13,7 +14,7 @@ p = [p(1)+p(1)-p(2) p p(end)+(p(end)-p(end-1))]; %add additional points, so that
 
 q = [];
 for i = 1:size(p,2)-3
-	q = [q CatmullRomSplineVec(t, p(i), p(i+1), p(i+2), p(i+3))];
+	q = [q CatmullRomSpline(t, p(i), p(i+1), p(i+2), p(i+3))];
 end
 
 end
